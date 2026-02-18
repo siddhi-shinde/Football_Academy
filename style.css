@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+     background-color: rgb(219, 208, 208);
+}
+
+.logo{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:200px;
+    height:auto;
+    z-index:20;
+}
+.logo img{
+    
+    height:100%;
+    width:auto;
+}
+header{
+    position:absolute;
+    width:100%;
+    left:0;
+    top:0;
+    padding:20px 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:10;
+}
+.logoContent
+{
+     color:#4F4444;
+     font-size:22px;
+     font-weight:bold;
+     letter-spacing:1px;
+     padding-left:100px;
+
+}
+nav a{
+    color:whitesmoke;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-left:30px;
+    font-size:14px;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#ff3c3c;
+}
+.hero{
+    position:relative;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    padding-left: 100px;
+    overflow:hidden;
+}
+.hero img{
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:0;
+}
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:1;
+}
+.headerDiv{
+    position:relative;
+    z-index:2;
+    color:white;
+}
+.headerDiv h1{
+    font-size:70px;
+    lineheight:1.1;
+
+}
+.headerDiv span{
+    color:#ff3c3c;
+}
+
+
+/* -----second section-------- */
+#foundingAcademy{
+    margin-bottom;
+}
+.foundingAca{
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+}
+.imgDiv img{
+    width: 550px;
+    height: 391px;
+}
+.contentDiv{
+    padding: 30px;
+}
+.headingFounding{
+    border-left: 9px solid #B53232;
+    font-size: 50px;
+    padding-left: 5px;
+    line-height: 90%;
+}
+.contentDiv p{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/*------ Fourth section-Coach ------- */
+.coachImg{
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+  
+}
+.coachInfo img{
+    height:300px;
+    width:300px;
+    margin-left:50px;
+}
+.coachInfo{
+     display: flex;
+    flex-direction:row;
+padding:30px;
+}
+.content{
+    padding:30px;
+    margin-top: 20px;
+}
+.content h3{
+     border-left: 5px solid #B53232;
+    font-size:50px;
+    color:#000000;
+}
+.content h4{
+     border-left: 5px solid #B53232;
+    font-size:30px;
+    color:#B53232;
+}
+.content p{
+    font-size: 16px;
+    padding-left: 20px;
+    line-height: 170%;
+}
+
+/*------- Section Six -------*/
+.Images{
+    position:relative;
+    width:100%;
+    max: width 1200px;
+    height:400px;
+    margin:auto;
+}
+.ImagesContent{
+    display: flex;
+    align-content: space-between;
+}
+.ImagesContent1 p{
+    padding:20px;
+    font-size:20px;
+}
+.ImagesContent2 p{
+    padding:20px;
+    font-size:20px;
+
+}
+.img {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+
+.img-left{
+    left:15%;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:2;
+}
+.img-center{
+    left:50%;
+    top:50%;
+    transform:translate(-50% ,-50%);
+    z-index:3;
+}
+.img-right{
+    right:15%;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:2;
+}
+
+
+
+/*------- Fifth section- Player of the week------ */
+.playerImg h1{
+ border-left: 5px solid #B53232;
+ margin-top: 5px;
+ color:#656565;
+}
+.player img{
+    height:100vh;
+    width:100vw;
+    position:absolute;
+}
+.playerImg img{ 
+    position:relative;
+    /* height: 700px; */
+    width:500px;
+    margin-top:0px;
+    z-index:-20px;
+    margin-left:650px;
+    margin-bottom: 0px;
+}
+.playerContent{
+    position:relative;
+    margin-left:20px;
+}   
+.playerContent h3{
+color:#FFFFFF80;
+font-size:30px;
+}
+.playerContent h2{
+    color:#FFFFFF;
+    font-size:60px;
+}
+.blue{
+    color:#4395D2;
+    font-size:20px;
+    line-height: 90%;
+}
+.red{
+    color:#00000080;
+    font-size:20px;
+    line-height: 90%;
+}
+.black{
+    background-color: #000000;
+    color:white;
+    padding:50px 50px;
+    justify-items:center;
+}
+.redBox{
+    color:#B53232;
+}
+.register{
+border-bottom: 1px solid #FFFFFF;
+color:#FFFFFF80;
+margin-top: 50px;
+}
+
+.team{
+    display:flex;
+    padding:50px 50px;
+    background-color: #FFFFFF80;
+    height:90vh;
+    width:100vw;
+}
+.team h1{
+    color:#656565;
+    border-left: 5px solid #B53232;
+    text-transform: uppercase;
+    font-size:50px;
+}
+.ball{
+   margin-left:200px;
+   display:flex;
+}
+.ball img{
+    justify-content: right;
+    height:250px;
+    width:250px;
+    margin-top:120px;
+    margin-right: 20px;
+}
+input{
+    border-radius:20px;
+    background-color: #D9D9D9;
+    padding:15px;
+    width:400px;
+}
+.ball a{
+    justify-content: space-around;
+    color:#B53232;
+    margin-bottom:20px;
+}
+.submit{
+    margin-left :50%;
+    align-items: center;
+    font-size:20px;
+    /* margin-bottom:20px; */
+}.submit a{
+    text-decoration:none;
+    color:#B53232;
+}
+
+
+ /*------- Footer------ */
+.footer{
+    display:flex;
+    background-color: #000000;
+    padding:50px 50px;
+    height:150px;
+    width:100vw;
+    justify-content: space-around;  
+}
+.footerContent{
+    padding:20px;
+}
+.footerContent h1{
+    color:white;
+}
+.footerDiv a{
+    color:white;
+    text-decoration: none;
+}
+.icons i{
+font-size:30px;
+}
+.redColor{
+    color:#B53232;
+}  
+
+
+
+
